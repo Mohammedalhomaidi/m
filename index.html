@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line with Circles</title>
+    <link rel="stylesheet" href="style.css">
+    <style> body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00224b; /* Same color as in the image */
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.line {
+    width: 300px; /* Adjust the width as necessary */
+    height: 3px;
+    background-color: white;
+    margin: 0 10px;
+}</style>
+</head>
+<body>
+    <div class="line-container">
+    
+    </div>
+    <script>
+        var request = require('request');
+          var options = {
+            'method': 'POST',
+            'url': 'https://avatarapi.com/v2/api.aspx',
+            'headers': {
+            'Content-Type': 'text/plain' },
+  body: '{"username":"mohammed ","password":"716677avatar","email":"alhomaidim88@gmail.com"}'
+
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+{
+    "data": {
+        "visitedAt": "2023-10-22T15:42:58.190Z",
+        "campaigns": [],
+        "assets": [],
+        "wallets": [],
+        "partners": [
+            "asfas-nr3il4"
+        ],
+        "_id": "65366366362cd70266fc9959",
+        "deleteAt": "2024-01-23T12:13:26.615Z",
+        "createdAt": "2023-10-23T12:13:26.616Z",
+        "updatedAt": "2023-10-23T12:13:26.616Z",
+        "__v": 0,
+        "isAnonymous": true,
+        "isGuest": false,
+        "id": "65366366362cd70266fc9959",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0Fub255bW91cyI6dHJ1ZSwidXNlcklkIjoiNjUzNjYzNjYzNjJjZDcwMjY2ZmM5OTU5IiwiYWJpbGl0eSI6W1sibWFuYWdlIiwiQXZhdGFyIix7InVzZXJJZCI6IjY1MzY2MzY2MzYyY2Q3MDI2NmZjOTk1OSJ9XSxbIm1hbmFnZSIsIlVzZXIiLHsiX2lkIjoiNjUzNjYzNjYzNjJjZDcwMjY2ZmM5OTU5In1dLFsicmVhZCIsIlBhcnRuZXIiXSxbInJlYWQsY3JlYXRlIiwiT3JnYW5pemF0aW9uIl0sWyJ1c2UiLCJUcmFja2luZyIseyJfaWQiOnsiJGluIjpbIjY1MzY1YmViODQ3YjUxMTVmNzY3ZTM3YiJdfX1dLFsicmVhZCIsIkFwcGxpY2F0aW9uIl0sWyJyZWFkIiwiQXNzZXQiXSxbInVzZSIsIkFzc2V0Iix7ImxvY2tlZCI6eyIkbmUiOnRydWV9fV0sWyJ1c2UiLCJBc3NldCIseyJpZCI6eyIkaW4iOltdfX1dLFsidXNlIiwiQXNzZXRMaXN0RmlsdGVyIix7InF1ZXJ5LmZpbHRlclVzZXJJZCI6IjY1MzY2MzY2MzYyY2Q3MDI2NmZjOTk1OSJ9XSxbInVzZSIsIkFzc2V0Iix7Imdyb3Vwcy5pZCI6eyIkaW4iOltdfX1dLFsicG9zdCIsIldlYmhvb2tFdmVudCIseyJyb3V0aW5nS2V5Ijoic3R1ZGlvLXVpLnYxLmdldHRpbmctc3RhcnRlZC5jb21wbGV0ZWQifV0sWyJwb3N0IiwiV2ViaG9va0V2ZW50Iix7InJvdXRpbmdLZXkiOiJzdHVkaW8tdWkudjEuYWRkLWFwcGxpY2F0aW9uLmNvbXBsZXRlZCJ9XSxbInJlYWQiLCJDYW1wYWlnbiIsMCwwLCJpZCxuYW1lLGNyZWF0ZWRBdCx1cGRhdGVkQXQiXSxbInJlYWQiLCJBc3NldCIsMCwxLCJtb2RlbFVybCxuZnRJZCJdXSwiaWF0IjoxNjk4MDYzMjA2fQ.loUw_SBj2YfjZZp783AKNR2mZLzXLHLe7YQ8McPBkUU"
+    }
+}
+    </script>
+</body>
+</html>
